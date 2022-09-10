@@ -16,19 +16,21 @@ export const SearchBar = () => {
   }, [values, dispatch]);
 
   return (
-    <div class="input-group my-3">
-      <span className="input-group-text" id="basic-addon1">
-        Search
-      </span>
-      <input
-        type="text"
-        className="form-control"
-        placeholder="Username or Name"
-        aria-label="Username"
-        name="search"
-        value={values.search}
-        onChange={handleChange}
-      />
-    </div>
+    <>
+      <div className="input-group w-75 my-3">
+        <span className="input-group-text" id="basic-addon1">
+          Search
+        </span>
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Username or Name"
+          aria-label="Username"
+          name="search"
+          value={values.search}
+          onChange={handleChange}
+        />
+      </div>
+    </>
   );
 };

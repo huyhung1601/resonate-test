@@ -8,5 +8,8 @@ export const useForm = (initialValues) => {
     setValues((p) => ({ ...p, [name]: value }));
   };
 
-  return { values, handleChange };
+  const resetValues = () => {
+    setValues(initialValues);
+  };
+  return { values, handleChange, resetValues };
 };

@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import { getContacts } from "./contactsAPI";
 
 const initialState = {
-  contacts: [],
-  filteredContacts: [],
+  contacts: JSON.parse(window.localStorage.getItem("contacts")) || [],
+  filteredContacts: JSON.parse(window.localStorage.getItem("contacts")) || [],
   loading: false,
   error: false,
 };

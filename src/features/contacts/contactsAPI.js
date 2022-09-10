@@ -8,6 +8,7 @@ export const getContacts = createAsyncThunk(
       const { data } = await axios.get(
         "https://jsonplaceholder.typicode.com/users"
       );
+      window.localStorage.setItem("contacts", JSON.stringify(data));
       return data;
     } catch (err) {
       throw new Error(err);
