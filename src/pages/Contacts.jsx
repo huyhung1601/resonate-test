@@ -14,12 +14,20 @@ const Contacts = () => {
   }, [dispatch]);
 
   return (
-    <div className="d-flex align-items-center flex-column gap-2">
+    <div className="d-flex align-items-center flex-column gap-2 ">
       <SearchBar />
+      <div className="text-center my-3">
+        <h3>Contacts</h3>
+      </div>
       {loading && <Spinner />}
       {error && <p>Something went wrong!</p>}
       {!loading && !error && (
-        <ContactTable filteredContacts={filteredContacts} contacts={contacts} />
+        <div className="container d-flex justify-content-center align-items-certer ">
+          <ContactTable
+            filteredContacts={filteredContacts}
+            contacts={contacts}
+          />
+        </div>
       )}
     </div>
   );

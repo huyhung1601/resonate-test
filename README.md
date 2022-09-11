@@ -13,7 +13,7 @@
 #   - @react-google-maps/api: display google map location
 
 # Run the App
-#   - Add GoogleMapAPI key: put your GoogleMapAPI in .env file
+#   - Add GoogleMapAPIKey: add your GoogleMapAPIKey in src/components/addressCard/map/Map.jsx
 #   - With Node: 16
 #       - Install npm pacekage: npm Install
 #       - run the app: npm start (http://localhost:3000/)

@@ -19,9 +19,6 @@ export const ContactTable = ({ filteredContacts, contacts }) => {
 
   return (
     <div className="card p-2 " style={{ minWidth: "75%" }}>
-      <div className="text-center border-bottom">
-        <h5>Contacts</h5>
-      </div>
       <table className="table table-striped text-sm">
         <TableHeader sortedBy={sortedBy} handleSort={handleSort} />
         <TableBody slideItems={slideItems} contacts={contacts} />

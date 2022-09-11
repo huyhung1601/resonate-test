@@ -9,7 +9,7 @@ export const AddressCard = ({ address }) => {
 
   return (
     <div className=" card">
-      <div className="card-body pt-0">
+      <div className="pt-0">
         <InfoCard
           title="Address"
           infos={{

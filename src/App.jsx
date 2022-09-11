@@ -8,7 +8,7 @@ function App() {
     <>
       <Router>
         <Header />
-        <div className="container">
+        <div className="container ">
           <Routes>
             <Route path="/" element={<Contacts />} />
             <Route path="/contact/:id" element={<Contact />} />

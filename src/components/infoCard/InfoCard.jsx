@@ -7,8 +7,8 @@ export const InfoCard = ({ border, title, infos }) => {
         {title && <h5 className="card-title border-bottom pb-1">{title}</h5>}
         <div className=" text-sm">
           {Object.entries(infos).map((info, index) => (
-            <div className="row mb-1" key={index}>
-              <div className="col-3">
+            <div className="row my-2" key={index}>
+              <div className="col-4 col-xm-3">
                 <p className="text-capitalize" style={{ fontWeight: "bold" }}>
                   {info[0]}:
                 </p>

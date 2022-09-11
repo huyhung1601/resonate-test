@@ -17,7 +17,7 @@ export const SearchBar = () => {
 
   return (
     <>
-      <div className="input-group w-75 my-2">
+      <div className="input-group w-75 my-3">
         <span className="input-group-text" id="basic-addon1">
           Search
         </span>
