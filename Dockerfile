@@ -1,11 +1,14 @@
-FROM node:16-alpine
+FROM node:16-alpine AS builder
 
 COPY package*.json ./
 
+###  Installing dependencies
+
 RUN npm install --silent
 
+# copy local files to app folder
 COPY . .
 
-EXPOSE 30000
+EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["npm","start"]
