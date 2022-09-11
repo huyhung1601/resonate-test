@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { InfoCard } from "../infoCard/InfoCard";
-import Map from "./Map";
+import Map from "./map/Map";
 
 export const AddressCard = ({ address }) => {
   const geo = useMemo(() => {
@@ -9,7 +9,7 @@ export const AddressCard = ({ address }) => {
 
   return (
     <div className=" card">
-      <div className="card-body">
+      <div className="card-body pt-0">
         <InfoCard
           title="Address"
           infos={{
