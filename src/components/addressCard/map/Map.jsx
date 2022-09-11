@@ -3,7 +3,7 @@ import React from "react";
 
 const Map = ({ geo }) => {
   //put your googleMapsApiKey here
-  const googleMapsApiKey = "AIzaSyCI8_Ko2BNbAclrNjO1pVG6i5Foyy8Vhq0";
+  const googleMapsApiKey = "googleMapApiKey";
   const containerStyle = {
     width: "100%",
     height: "300px",

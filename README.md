@@ -1,9 +1,9 @@
 # Contact Management App
 #   - A responsive mobile-friendly application for contact management via user informarion
-#   - Provide a friendly user interface and a convinient user experience
+#   - Provide friendly user interface and  user experience
 
 # Features:
-#   - Table: paginantion, sort, search (by name or username)
+#   - Table: pagination, sort, search (by name or username)
 #   - Contact Page: autocomplete searching (by name or username), google map
 
 # Techs and npm packages:
@@ -14,8 +14,8 @@
 
 # Run the App
 #   - Add GoogleMapAPIKey: add your GoogleMapAPIKey in src/components/addressCard/map/Map.jsx
-#   - With Node: 16
-#       - Install npm pacekage: npm Install
+#   - With Node: v16 (require npm cli)
+#       - Install npm package: npm Install
 #       - run the app: npm start (http://localhost:3000/)
 #   - With Docker: (require docker destop, and docker cli at https://docs.docker.com/get-docker/)
 #       - build image: docker build -t resonate-test .
