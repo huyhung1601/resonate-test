@@ -16,10 +16,10 @@
 - Add GoogleMapAPIKey: add your GoogleMapAPIKey in src/components/addressCard/map/Map.jsx
 - With Node: v16 (require npm cli)
   - Install npm package: npm Install
-  - run the app: npm start (http://localhost:3000/)
+  - Run the app: npm start (http://localhost:3000/)
 - With Docker: (require docker destop, and docker cli at https://docs.docker.com/get-docker/)
-  - build image: docker build -t resonate-test .
-  - run container: docker run -p 3000:3000 resonate-test (http://localhost:3000/)
+  - Build image: docker build -t resonate-test .
+  - Run container: docker run -p 3000:3000 resonate-test (http://localhost:3000/)
 
 # Deploy docker to AWS elastic beanstalk
 - eb init
