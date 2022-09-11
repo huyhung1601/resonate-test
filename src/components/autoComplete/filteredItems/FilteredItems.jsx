@@ -15,10 +15,10 @@ export const FilteredItems = ({ filteredItems, resetValues }) => {
     <div
       className="border position-absolute px-3 overflow-auto text-sm bg-light"
       style={{
-        width: "61vw",
+        width: "calc(100% - 75px)",
         maxHeight: "150px",
         top: "42px",
-        right: -1,
+        right: 0,
         zIndex: 1000,
       }}
     >
