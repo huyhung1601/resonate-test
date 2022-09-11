@@ -14,7 +14,7 @@ const Contacts = () => {
   }, [dispatch]);
 
   return (
-    <div className="d-flex align-items-center flex-column gap-2 ">
+    <div className="d-flex align-items-center flex-column">
       <SearchBar />
       <div className="text-center my-3">
         <h3>Contacts</h3>
