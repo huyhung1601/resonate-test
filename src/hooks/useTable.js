@@ -85,6 +85,7 @@ export const useTable = (items) => {
   useEffect(() => {
     let data;
     if (sortedBy !== "") {
+      // with sorting
       data = items
         .slice()
         .sort(function (a, b) {
@@ -98,9 +99,9 @@ export const useTable = (items) => {
         })
         .slice((page - 1) * rows, page * rows);
     } else {
+      //without sorting
       data = items.slice((page - 1) * rows, page * rows);
     }
-    console.log(data);
     setSlideItems([...data]);
   }, [items, rows, page, sortedBy, setSlideItems]);
 
